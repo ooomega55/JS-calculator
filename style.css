@@ -46,3 +46,18 @@ body {
     margin: 10px 4px;
     border: none !important;
 }
+
+/*calculator font*/
+.pixel {
+    font-family: 'Pixelify_Sans';
+    src: url('Pixelify_Sans.zip');
+  }
+
+/*I wonder what this class is*/
+.navy {
+    background-color: navy;
+}
+
+.numbercolor {
+    background-color: lime;
+}
