@@ -62,3 +62,7 @@ body {
 .numbercolor {
     background-color: lime;
 }
+
+.numbercolor:hover {
+    background-color: #42B1F3;
+}
