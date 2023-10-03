@@ -53,11 +53,12 @@ body {
     src: url('Pixelify_Sans.zip');
   }
 
-/*I wonder what this class is*/
+/*calculator background*/
 .navy {
     background-color: navy;
 }
 
+/*number buttons background*/
 .numbercolor {
     background-color: lime;
 }
