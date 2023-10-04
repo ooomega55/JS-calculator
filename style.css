@@ -66,3 +66,21 @@ body {
 .numbercolor:hover {
     background-color: #42B1F3;
 }
+
+/*0 and decimal color*/
+.zeroper{
+    background-color: rgb(57, 224, 155);
+}
+
+.zeroper:hover{
+    background-color: #42B1F3;
+}
+
+/*Operation symbols color*/
+.symbolcolor {
+    background-color: seagreen;
+}
+
+.symbolcolor:hover{
+    background-color: #42B1F3;
+}
