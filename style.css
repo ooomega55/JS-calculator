@@ -84,3 +84,11 @@ body {
 .symbolcolor:hover{
     background-color: #42B1F3;
 }
+
+.equalcolor{
+    background-color: aquamarine;
+}
+
+.equalcolor:hover{
+    background-color: #42B1F3;
+}
