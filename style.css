@@ -82,13 +82,23 @@ body {
 }
 
 .symbolcolor:hover{
-    background-color: #42B1F3;
+    background-color:lightgreen;
 }
 
+/*equal sign color*/
 .equalcolor{
     background-color: aquamarine;
 }
 
 .equalcolor:hover{
-    background-color: #42B1F3;
+    background-color: mediumseagreen;
+}
+
+/*Memory button color*/
+.memcolor{
+    background-color:greenyellow ;
+}
+
+.memcolor:hover{
+    background-color: rgb(131, 196, 33);
 }
