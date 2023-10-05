@@ -36,11 +36,53 @@ function numButPress(num) {
 }
 
 function mathButPress(operator) {
-
+    //Check if there was a previous calculation by seeing if resultVal has value
+    //If result doesn't have a value, then store the current val as a previous for the next calculation
+    if(!resultVal){
+        prevVal = newVal
+    } else {
+        //if there is a current result, store that as previous value entered
+        prevVal = resultVal
+    }
+    //restart to create new number
+    newVal = ''
+    //reset decimal
+    decimalClicked = false
+    //store operator
+    mathOperator = operator
+    //prepare entry for receiving new numbers
+    resultVal = ''
+    document.getElementById('entry').value = ''
 }
 
 function equalButPress(){
+    decimalClicked = false
+    //converting string numbers into float
+    prevVal = parseFloat(prevVal)
+    newVal = parseFloat(newVal)
 
+    //perform calculations based on stored operator
+    switch(mathOperator){
+        case '+':
+            resultVal = prevVal + newVal;
+            break
+        case '-':
+            resultVal = prevVal - newVal;
+            break
+        case '*':
+            resultVal = prevVal * newVal;
+            break
+        case '/':
+            resultVal = prevVal / newVal;
+            break
+        //if equals is hit without operator, leave it
+        default:
+            resultVal = newVal;
+    }
+    //store current value as the previous so I can expect to next value in calculation
+    prevVal = newVal
+    //put calculation in entry window
+    document.getElementById('entry').value = resultVal
 }
 
 //clears everything EXCEPT memory
